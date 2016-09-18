@@ -1,0 +1,79 @@
+.pants {
+    width: 180px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    top: -58px;
+    border-radius: 2px 2px 25px 25px;
+    background: #146696;
+    background: -webkit-linear-gradient(left, #146696 67%,#115278 100%);
+    border: 2px dotted #1f4362;
+    box-shadow: inset 1px -10px 10px 2px #1a364d,
+              0 0 2px 2px #2e5f88;
+
+    &:before {
+        width: 120px;
+        height: 60px;
+        content: "";
+        display: block;
+        position: relative;
+        top: -50px;
+        left: 40px;
+        border: 2px dotted #1f4362;
+        border-bottom: 0;
+        border-radius: 10px;
+        background: #146696;
+        background-image: -webkit-gradient(linear, left, color-stop(67%, #146696), color-stop(100%, #115278));
+        background-image: -webkit-linear-gradient(left, #146696 67%, #115278 100%);
+        background-image:    -moz-linear-gradient(left, #146696 67%, #115278 100%);
+        background-image:     -ms-linear-gradient(left, #146696 67%, #115278 100%);
+        background-image:      -o-linear-gradient(left, #146696 67%, #115278 100%);
+        background-image:         linear-gradient(left, #146696 67%, #115278 100%);
+        box-shadow: 0 -3px 2px 2px #2e5f88;
+    }
+}
+
+.belt {
+    position: relative;
+    width: 15px;
+    height: 75px;
+    background: #146696;
+    box-shadow: inset 1px 10px 10px 2px #1a364d;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #223333;
+        position: absolute;
+        bottom: 5px;
+        left: 2px;
+    }
+}
+.belt-left {
+    top: -160px;
+    left: 18px;
+    border: 2px dotted #1f4362;
+    border-top-left-radius: 25px;
+    -webkit-transform: rotate(-55deg);
+     -moz-transform: rotate(-55deg);
+      -ms-transform: rotate(-55deg);
+       -o-transform: rotate(-55deg);
+          transform: rotate(-55deg);
+}
+
+.belt-right {
+    height: 60px;
+    top: -230px;
+    left: 158px;
+    border: 2px dotted #1F4362;
+    border-top-right-radius: 25px;
+    -webkit-transform: rotate(35deg);
+     -moz-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+       -o-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
