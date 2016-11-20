@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  font-family: "Helvetica Neue", Menlo, Monaco, Helvetica, "Courier New", 微软雅黑, monospace, Arial, sans-serif, 黑体;
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+body {
+  background-color: lightslategray;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  width: 52.5rem;
+}
+
+.personal-info {
+  width: 21.3rem;
+  background-color: #D9EDEC;
+}
+
+.personal-info .avatar {
+  width: 12.7rem;
+  height: 12.7rem;
+  margin: 1.8rem auto 1rem auto;
+}
+
+.personal-info .avatar img {
+  border-radius: 0.5rem;
+}
+
+.personal-info .job, .personal-info .name {
+  font-size: 2.15rem;
+  height: 2.15rem;
+  color: #71A09D;
+  text-align: center;
+}
+
+.personal-info .name {
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+.personal-info .base-info {
+  margin-top: 1rem;
+  color: #71A09D;
+}
+
+.personal-info .base-info p {
+  padding-left: 2.5rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.personal-info .base-info p:first-child {
+  margin-top: 2rem;
+}
+
+.personal-info .base-info p .icon-width-bigger {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.personal-info .base-info p i {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.personal-info .base-info p span {
+  display: inline-block;
+}
+
+.personal-info .info-unit {
+  color: #71A09D;
+  margin-top: 2rem;
+}
+
+.personal-info .info-unit .title {
+  width: 16.5rem;
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #71A09D;
+}
+
+.personal-info .info-unit .title i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.personal-info .info-unit p {
+  width: 16.5rem;
+  margin: 0.5rem auto 0 auto;
+}
+
+.personal-info .info-unit .title span {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  color: #71A09D;
+}
+
+.certificate-unit p {
+  /* margin: 0.5rem auto 0 auto; */
+}
+
+.certificate-unit p:first-child {
+  margin-top: 1rem;
+}
+
+.skills .skill-unit {
+  width: 16.5rem;
+  margin: 1rem auto;
+}
+
+.skills .skill-unit .progress {
+  width: 100%;
+  height: 0.8rem;
+  margin-top: 0.3rem;
+  background-color: #d7d7d7;
+  border-radius: 0.5rem;
+}
+
+.skill-unit .progress .percent {
+  width: 50%;
+  height: 100%;
+  border-radius: 0.5rem;
+  background-color: #71A09D;
+}
+
+.skill-unit .progress .percent-0 {
+  width: 0;
+}
+
+.skill-unit .progress .percent-10 {
+  width: 10%;
+}
+
+.skill-unit .progress .percent-20 {
+  width: 20%;
+}
+
+.skill-unit .progress .percent-30 {
+  width: 30%;
+}
+
+.skill-unit .progress .percent-40 {
+  width: 40%;
+}
+
+.skill-unit .progress .percent-50 {
+  width: 50%;
+}
+
+.skill-unit .progress .percent-60 {
+  width: 60%;
+}
+
+.skill-unit .progress .percent-60 {
+  width: 60%;
+}
+
+.skill-unit .progress .percent-70 {
+  width: 70%;
+}
+
+.skill-unit .progress .percent-80 {
+  width: 80%;
+}
+
+.skill-unit .progress .percent-90 {
+  width: 90%;
+}
+
+.skill-unit .progress .percent-100 {
+  width: 100%;
+}
+
+.about-me .introductions {
+  margin-top: 1rem !important;
+  text-indent: 2rem;
+}
+
+.main-content {
+  width: 31.2rem;
+  background-color: white;
+  min-height: 74.25rem;
+}
+
+.main-content .content-unit {
+  margin: 1.3rem 1rem 0 2.8rem;
+}
+
+.content-unit .details{
+  margin-top: 1rem;
+}
+
+
+.content-unit p{
+  margin-top: 0.3rem;
+  line-height: 1.3rem;
+}
+
+.content-unit .title {
+  font-size: 1.5rem;
+  color: #71A09D;
+  font-weight: bolder;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #71a09d;
+}
+
+.content-unit .title i {
+  margin-right: 0.5rem;
+}
+
+.content-unit .time, .content-unit .degree {
+  color: #71a09d;
+}
+
+.content-unit .time {
+  float: left;
+}
+
+.content-unit .degree {
+  float: left;
+  margin-left: 6rem;
+}
+
+.content-unit .describe{
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.content-unit:last-child{
+  margin-bottom: 2rem;
+}
+
+.details .award-item{
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.details .award-item .name{
+  float: left;
+}
+
+.details .award-item p{
+  margin-top: 0;
+  position: absolute;;
+  right: 1rem;
+  color: #71a09d;
+}
