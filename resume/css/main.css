@@ -26,7 +26,7 @@ body {
 }
 
 .personal-info {
-  width: 21.3rem;
+  width: 19.3rem;
   background-color: #D9EDEC;
 }
 
@@ -61,7 +61,7 @@ body {
 }
 
 .personal-info .base-info p {
-  padding-left: 2.5rem;
+  padding-left: 1.5rem;
   margin-top: 0.5rem;
   font-size: 1rem;
 }
@@ -90,7 +90,7 @@ body {
 
 .personal-info .info-unit {
   color: #71A09D;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .personal-info .info-unit .title {
@@ -198,22 +198,32 @@ body {
 }
 
 .main-content {
-  width: 31.2rem;
+  width: 33.2rem;
   background-color: white;
   min-height: 74.25rem;
 }
 
 .main-content .content-unit {
-  margin: 1.3rem 1rem 0 2.8rem;
+  width: 29rem;
+  margin: 1.3rem auto 0 auto;
 }
+
 
 .content-unit .details{
-  margin-top: 1rem;
+  margin-top: 0.8rem;
+}
+
+.details .head .name{
+  float: left;
 }
 
 
+.details .head .time{
+  float: right;
+}
+
 .content-unit p{
-  margin-top: 0.3rem;
+  margin-top: 0.15rem;
   line-height: 1.3rem;
 }
 
@@ -222,6 +232,7 @@ body {
   color: #71A09D;
   font-weight: bolder;
   padding-bottom: 0.5rem;
+  position: relative;
   border-bottom: 1px solid #71a09d;
 }
 
@@ -229,17 +240,8 @@ body {
   margin-right: 0.5rem;
 }
 
-.content-unit .time, .content-unit .degree {
+.content-unit .time{
   color: #71a09d;
-}
-
-.content-unit .time {
-  float: left;
-}
-
-.content-unit .degree {
-  float: left;
-  margin-left: 6rem;
 }
 
 .content-unit .describe{
@@ -266,27 +268,47 @@ body {
   float: left;
 }
 
-.details .award-item p{
+.details .award-item .time{
   margin-top: 0;
-  position: absolute;;
-  right: 1rem;
+  float: right;
   color: #71a09d;
 }
 
-.remove{
+
+
+.remove, .newRemove{
   opacity: 0;
   cursor: pointer;
+  position: absolute;
+  right: -1rem;
+  top: 0.2rem;
+  color: red;
 }
 
-.describe p:hover .remove{
+.describe p:hover .remove, .describe p:hover .newRemove, .award-item:hover .remove{
   opacity: 1;
 }
 
 .add{
   opacity: 0;
   cursor: pointer;
+  position: absolute;
+  right: -1rem;
+  top: 0.3rem;
+  color: #71a09d;
 }
 
-.details .name:hover .add{
+.head:hover .add{
+  opacity: 1;
+}
+
+.title-add{
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+.content-unit .title:hover .title-add{
   opacity: 1;
 }
