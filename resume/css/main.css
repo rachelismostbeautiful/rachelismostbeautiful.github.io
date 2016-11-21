@@ -34,6 +34,9 @@ body {
   width: 12.7rem;
   height: 12.7rem;
   margin: 1.8rem auto 1rem auto;
+  background: url("../assets/avatar.png");
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
 }
 
 .personal-info .avatar img {
@@ -268,4 +271,22 @@ body {
   position: absolute;;
   right: 1rem;
   color: #71a09d;
+}
+
+.remove{
+  opacity: 0;
+  cursor: pointer;
+}
+
+.describe p:hover .remove{
+  opacity: 1;
+}
+
+.add{
+  opacity: 0;
+  cursor: pointer;
+}
+
+.details .name:hover .add{
+  opacity: 1;
 }
