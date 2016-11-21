@@ -7,7 +7,6 @@ $(document).ready(function() {
   }).append(`<i class='icon-plus add'></i>`);
 
   $(".add").on("click", function(e) {
-    e = e || window.event;
     if ($(this).parent()) {
       $(this).parent().next().append(`<p class="newP" style="position:relative" contenteditable="true">Hello</p>`);
     }
@@ -16,7 +15,7 @@ $(document).ready(function() {
 
 	$('.content-unit .title-add').on('click', function(e){
 		let clone = $(this).parent().next();
-			clone = clone.clone();
+			clone = clone.clone(true);
 		$(this).parent().parent().append(clone);
 	});
 
